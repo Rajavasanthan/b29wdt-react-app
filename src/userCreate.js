@@ -11,7 +11,7 @@ function UserCreate() {
         },
         onSubmit: async (values) => {
             try {
-                await axios.post("http://localhost:3000/create-user",values)
+                await axios.post("https://b29wdt-node-app.herokuapp.com/create-user",values)
                 navigate("/")
             } catch (error) {
                 console.log(error)
